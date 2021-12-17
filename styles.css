@@ -1,0 +1,32 @@
+body {
+  background-color: 0064ff;
+  text-align: center;
+  font-family: 'delfinoregular', Fallback, sans-serif;
+  background-image: url("wallpaper2.jpg"); /* The image used */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'delfinoregular', Fallback, sans-serif;
+  font-size: 400%;
+}
+p {
+  color: white;
+  text-align: center;
+  font-family: 'delfinoregular', Fallback, sans-serif;
+  font-size: 200%;
+}
+
+@font-face {
+    font-family: 'delfinoregular';
+    src: url('Delfino.woff2') format('woff2'),
+         url('Delfino.woff') format('woff');
+         url('Delfino.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}		
