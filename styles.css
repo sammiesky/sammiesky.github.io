@@ -5,7 +5,7 @@ body {
   background-image: url("wallpaper2.jpg"); /* The image used */
   height: 500px; /* You must set a specified height */
   background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-repeat: repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 h1 {
@@ -14,11 +14,18 @@ h1 {
   font-family: 'delfinoregular', Fallback, sans-serif;
   font-size: 400%;
 }
-p {
+h2 {
   color: white;
   text-align: center;
   font-family: 'delfinoregular', Fallback, sans-serif;
   font-size: 200%;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-family: 'delfinoregular', Fallback, sans-serif;
+  font-size: 150%;
 }
 
 @font-face {
