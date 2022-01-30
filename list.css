@@ -1,0 +1,44 @@
+body {
+  background-color: 0064ff;
+  text-align: center;
+  font-family: 'delfinoregular', Fallback, sans-serif;
+  background-image: url("wallpaper1.png"); /* The image used */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+h1 {
+  color: #444446;
+  text-align: center;
+  font-family: 'Montserrat', Fallback, sans-serif;
+  font-size: 300%;
+}
+h2 {
+  color: #444446;
+  text-align: center;
+  font-family: 'Montserrat', Fallback, sans-serif;
+  font-size: 200%;
+}
+
+h3 {
+  color: #444446;
+  text-align: center;
+  font-family: 'Montserrat', Fallback, sans-serif;
+  font-size: 150%;
+}
+
+p {
+  color: #444446;
+  text-align: center;
+  font-family: 'Montserrat', Fallback, sans-serif;
+  font-size: 150%;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}		
