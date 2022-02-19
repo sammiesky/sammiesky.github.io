@@ -1,12 +1,7 @@
 body {
-  background-color: 0064ff;
+  background-color: #FFBEF4;
   text-align: center;
   font-family: 'delfinoregular', Fallback, sans-serif;
-  background-image: url("wallpaper2.jpg"); /* The image used */
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
 }
 h1 {
   color: white;
