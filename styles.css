@@ -11,11 +11,18 @@ h1 {
   font-size: 400%;
 }
 
+h2 {
+  color: white;
+  text-align: center;
+  font-family: 'delfinoregular', Fallback, sans-serif;
+  font-size: 200%;
+}
+
 p {
   color: white;
-  text-align: left;
+  text-align: center;
   font-family: 'delfinoregular', Fallback, sans-serif;
-  font-size: 140%;
+  font-size: 150%;
 }
 
 @font-face {
