@@ -3,24 +3,19 @@ body {
   text-align: center;
   font-family: 'delfinoregular', Fallback, sans-serif;
 }
+
 h1 {
   color: white;
   text-align: center;
   font-family: 'delfinoregular', Fallback, sans-serif;
   font-size: 400%;
 }
-h2 {
-  color: white;
-  text-align: center;
-  font-family: 'delfinoregular', Fallback, sans-serif;
-  font-size: 200%;
-}
 
 p {
   color: white;
-  text-align: center;
+  text-align: left;
   font-family: 'delfinoregular', Fallback, sans-serif;
-  font-size: 150%;
+  font-size: 140%;
 }
 
 @font-face {
@@ -32,3 +27,71 @@ p {
     font-style: normal;
 
 }		
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #000;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #FFF;
+  color: black;
+}
+
+.row {  
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 10%;
+  flex: 10%;
+  background-color: #9a9a9a;
+  padding: 20px;
+}
+
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #b3b3b3;
+  padding: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
