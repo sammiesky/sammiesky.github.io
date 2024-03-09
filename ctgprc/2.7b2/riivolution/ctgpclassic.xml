@@ -1,0 +1,824 @@
+<wiidisc version="1">
+	<id game="RMC"/>
+	<options>
+		<section name="CTGP-R Classic v2.7">
+			<option name="Custom Tracks">
+				<choice name="Enabled!">
+					<patch id="PackLoadPack-classic"/>
+				</choice>
+			</option>
+			<option name="My Stuff">
+				<choice name="CTGP-C">
+					<patch id="PackLoad-classic" />
+				</choice>
+				<choice name="Music (C)">
+					<patch id="PackLoad-MusicOnly-classic" />
+				</choice>
+				<choice name="CTGP-R">
+					<patch id="CTGPLoad-classic" />
+				</choice>
+				<choice name="Music (R)">
+					<patch id="CTGPLoad-MusicOnly-classic" />
+				</choice>
+			</option>
+			<option name="SD Card Save">
+				<choice name="CTGP-C">
+					<patch id="Save2SD-classic" />
+				</choice>
+				<choice name="CTGP-R">
+					<patch id="Save2SD-ctgp" />
+				</choice>
+			</option>
+			<option name="Language (WIP)">
+				<choice name="Catalan">
+					<patch id="Language-Catalan-classic" />
+				</choice>
+				<choice name="English (EUR/AUS)">
+					<patch id="Language-English-PAL-classic" />
+				</choice>
+				<choice name="English (USA)">
+					<patch id="Language-English-NTSC-classic" />
+				</choice>
+				<choice name="French (Canada)">
+					<patch id="Language-French-NTSC-classic" />
+				</choice>
+				<choice name="French (France)">
+					<patch id="Language-French-PAL-classic" />
+				</choice>
+				<choice name="German">
+					<patch id="Language-German-classic" />
+				</choice>
+				<choice name="Korean">
+					<patch id="Language-Korean-classic" />
+				</choice>
+				<choice name="Italian">
+					<patch id="Language-Italian-classic" />
+				</choice>
+				<choice name="Japanese">
+					<patch id="Language-Japanese-classic" />
+				</choice>
+				<choice name="Spanish (Mexico)">
+					<patch id="Language-Spanish-NTSC-classic" />
+				</choice>
+				<choice name="Spanish (Spain)">
+					<patch id="Language-Spanish-PAL-classic" />
+				</choice>
+			</option>
+			<option name="Accessibility Tex.">
+				<choice name="Enabled">
+					<patch id="AltTextures-classic" />
+				</choice>
+			</option>
+			<option name="Lava Road Color">
+				<choice name="Orange">
+					<patch id="AltTextures-Orange-classic" />
+				</choice>
+				<choice name="Green">
+					<patch id="AltTextures-Green-classic" />
+				</choice>
+			</option>
+			<option name="30 FPS">
+				<choice name="Enabled!">
+					<patch id="30FPS-classic" />
+				</choice>
+			</option>
+		</section>
+	</options>	
+	<patch id="PackLoadPack-classic">
+		<memory offset="0x80242698" value="4BDC1968" original="4e800020" /> <!--RMCP DOL-->
+		<memory offset="0x8000A3F4" value="4bff9c0c" original="4e800020" /> <!--RMCP REL-->
+		<memory offset="0x802417dc" value="4BDC2824" original="4e800020" /> <!--RMCE DOL-->
+		<memory offset="0x8000A3B4" value="4BFF9C4c" original="4e800020" /> <!--RMCE REL-->		
+		<memory offset="0x802425b8" value="4BDC1A48" original="4e800020" /> <!--RMCJ DOL-->
+		<memory offset="0x8000A350" value="4BFF9CB0" original="4e800020" /> <!--RMCJ REL-->		
+		<memory offset="0x80242a0c" value="4BDC15f4" original="4e800020" /> <!--RMCK DOL-->
+		<memory offset="0x8000A4FC" value="4BFF9B04" original="4e800020" /> <!--RMCK REL-->
+	    <memory valuefile="/ctgpclassic/Binaries/Loader.pul" offset="0x80004000"/>
+		<folder external="/ctgpclassic/Binaries" disc="/Binaries" create="true"/>
+		<folder external="/ctgpclassic/Tracks" disc="/Race/Course" create="true"/>
+		<folder external="/ctgpclassic/Assets" disc="/" create="true"/>
+		<folder external="/ctgpclassic/Assets/UI" />
+		<folder external="/ctgpclassic/CTBRSTM" disc="/Sound/strm" create="true"/>
+		<file disc="/Boot/Strap/us/English.szs" external="/ctgpclassic/Assets/UI/strap.szs" create="true" />
+		<file disc="/Boot/Strap/us/French.szs" external="/ctgpclassic/Assets/UI/strap.szs" create="true" />
+		<file disc="/Boot/Strap/us/Spanish_US.szs" external="/ctgpclassic/Assets/UI/strap.szs" create="true" />
+		<file disc="/Scene/UI/Globe.szs" external="/ctgpclassic/Assets/UI/Globe.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti.szs" external="/ctgpclassic/Assets/UI/MenuMulti.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle.szs" external="/ctgpclassic/Assets/UI/MenuSingle.szs" create="true" />
+		<file disc="/Scene/UI/Title.szs" external="/ctgpclassic/Assets/UI/Title.szs" create="true" />
+		<file disc="/Scene/UI/Channel.szs" external="/ctgpclassic/Assets/UI/Channel.szs" create="true" />
+		<file disc="/Scene/UI/MenuOther.szs" external="/ctgpclassic/Assets/UI/MenuOther.szs" create="true" />
+		<file disc="/Scene/UI/Race.szs" external="/ctgpclassic/Assets/UI/Race.szs" create="true" />
+		<file disc="/Scene/UI/Race_R.szs" external="/ctgpclassic/Assets/UI/Race.szs" create="true" />
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/SuperMenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/SuperMenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/SuperMenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/SuperMenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/SuperMenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/SuperMenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/SuperMenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/SuperMenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/SuperMenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/SuperMenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/SuperMenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/SuperMenu_Q.szs" create="true" />
+		<file disc="/Boot/Strap/eu/English.szs" external="/ctgpclassic/Assets/UI/strap.szs" create="true" />
+		<file disc="/Boot/Strap/eu/French.szs" external="/ctgpclassic/Assets/UI/strap.szs" create="true" />
+		<file disc="/Boot/Strap/eu/Spanish_EU.szs" external="/ctgpclassic/Assets/UI/strap.szs" create="true" />
+		<file disc="/Boot/Strap/eu/German.szs" external="/ctgpclassic/Assets/UI/strap.szs" create="true" />
+		<file disc="/Boot/Strap/eu/Italian.szs" external="/ctgpclassic/Assets/UI/strap.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/SuperMenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/SuperMenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/SuperMenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/SuperMenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/SuperMenu_F.szs" create="true" />
+		<file disc="/Boot/Strap/jp/jp.szs" external="/ctgpclassic/Assets/UI/strap.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/SuperMenu_J.szs" create="true" />
+		<file disc="/Boot/Strap/kr/Korean.szs" external="/ctgpclassic/Assets/UI/strap.szs" create="true" />
+		<file disc="/Scene/UI/Globe_R.szs" external="/ctgpclassic/Assets/UI/Globe.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_R.szs" external="/ctgpclassic/Assets/UI/MenuMulti.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_R.szs" external="/ctgpclassic/Assets/UI/MenuSingle.szs" create="true" />
+		<file disc="/Scene/UI/Title_R.szs" external="/ctgpclassic/Assets/UI/Title.szs" create="true" />
+		<file disc="/Scene/UI/Channel_R.szs" external="/ctgpclassic/Assets/UI/blank.rkg" create="true" />
+		<file disc="/Scene/UI/MenuOther_R.szs" external="/ctgpclassic/Assets/UI/MenuOther.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/SuperMenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font_K.szs" create="true" />
+		<file disc="/thp/course/banana.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/course/cup_select.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/course/flower.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/course/star.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/course/kinoko.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/course/konoha.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/course/koura.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/course/special.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/course/thunder.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/battle/battle_cup_select.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/battle/battle_retro.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/thp/battle/battle_wii.thp" external="/ctgpclassic/Assets/UI/star.thp" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<memory ocarina="true" value="7CE33B783887003438A7003838C7004C" offset="0x800018A8" />
+		<memory valuefile="codehandler.bin" offset="0x80001800" />
+		<memory offset="0x00001CDE" value="8000" />
+		<memory offset="0x00001CE2" value="28B8" />
+		<memory offset="0x00001F5A" value="8000" />
+		<memory offset="0x00001F5E" value="28B8" />
+		<memory valuefile="/ctgpclassic/Assets/{$__gameid}{$__region}{$__maker}.gct" offset="0x800028B8" />
+	</patch>	
+	<patch id="CTGPLoad-classic">
+		<folder external="/ctgpr/My Stuff" recursive="false"/>
+		<folder disc="/" external="/ctgpr/My Stuff"/>
+	</patch>	
+	<patch id="PackLoad-classic">
+		<folder external="/ctgpclassic/My Stuff" recursive="false"/>
+		<folder disc="/" external="/ctgpclassic/My Stuff"/>
+	</patch>
+	<patch id="CTGPLoad-MusicOnly-classic">
+		<folder external="/ctgpr/My Stuff" recursive="false" disc="/sound/strm" />
+		<folder external="/ctgpr/My Stuff" recursive="false" disc="/sound" />
+	</patch>
+	<patch id="PackLoad-MusicOnly-classic">
+		<folder external="/ctgpclassic/My Stuff" recursive="false" disc="/sound/strm" />
+		<folder external="/ctgpclassic/My Stuff" recursive="false" disc="/sound" />
+	</patch>
+	<patch id="AltTextures-classic">
+		<folder external="/ctgpclassic/Tracks/alternate" disc="/Race/Course" create="true"/>
+	</patch>
+	<patch id="AltTextures-Orange-classic">
+		<folder external="/ctgpclassic/Tracks/alternate/lavaroad/orange" disc="/Race/Course" create="true"/>
+	</patch>
+	<patch id="AltTextures-Green-classic">
+		<folder external="/ctgpclassic/Tracks/alternate/lavaroad/green" disc="/Race/Course"  create="true"/>
+	</patch>
+	<patch id="Save2SD-classic">
+		<savegame external="/riivolution/save/ctgprc{$__region}" clone="false"/>
+	</patch>
+	<patch id="Save2SD-ctgp">
+		<savegame external="/riivolution/save/RMC{$__region}" clone="false"/>
+	</patch>
+	<patch id="Language-English-PAL-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font-force.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_E.szs" create="true" />
+  </patch>
+  <patch id="Language-English-NTSC-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font-force.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_U.szs" create="true" />
+  </patch>
+  <patch id="Language-French-PAL-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font-force.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_F.szs" create="true" />
+  </patch>
+  <patch id="Language-French-NTSC-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font-force.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_Q.szs" create="true" />
+  </patch>
+  <patch id="Language-German-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font-force.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_G.szs" create="true" />
+  </patch>
+  <patch id="Language-Korean-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font_K-force.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_K.szs" create="true" />
+  </patch>
+  <patch id="Language-Italian-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font-force.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_I.szs" create="true" />
+  </patch>
+  <patch id="Language-Japanese-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font-force.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_J.szs" create="true" />
+  </patch>
+  <patch id="Language-Spanish-PAL-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font-force.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_S.szs" create="true" />
+  </patch>
+  <patch id="Language-Spanish-NTSC-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font-force.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_M.szs" create="true" />
+  </patch>
+  <patch id="Language-Catalan-classic">
+		<file disc="/Scene/UI/Font.szs" external="/ctgpclassic/Assets/UI/Font.szs" create="true" />
+		<file disc="/Scene/UI/Font_K.szs" external="/ctgpclassic/Assets/UI/Font-force.szs" create="true" />
+		<file disc="/Scene/UI/Race_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Race_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Race_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Race_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Race_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Race_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Race_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Race_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Race_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Race_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Globe_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Title_U.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Globe_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Title_M.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Globe_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Title_Q.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Globe_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Title_J.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Globe_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Title_K.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Globe_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Title_E.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Globe_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Title_G.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Globe_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Title_S.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Globe_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Title_I.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Globe_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuMulti_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/MenuSingle_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/Scene/UI/Title_F.szs" external="/ctgpclassic/Assets/UI/Supermenu_CAT.szs" create="true" />
+		<file disc="/rel/StaticR.rel" external="/ctgprc/rel/{$__region}/StaticR_CAT.rel" create="true" />
+	</patch>
+</wiidisc>
