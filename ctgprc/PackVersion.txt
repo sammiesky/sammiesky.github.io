@@ -1,2 +1,2 @@
-2.7b2 http://saiveeon.github.io/ctgprc/2.7b2/ctgpclassic/xml/ctgpclassic.xml /ctgpclassic/xml/ctgpclassic.xml
-2.7b2 http://saiveeon.github.io/ctgprc/2.7b2/riivolution/ctgpclassic.xml /riivolution/ctgpclassic.xml
+2.7b2 http://saiveeon.github.io/ctgprc/2.7b2/ctgpclassic/xml/ctgpclassic.xml /ctgpclassic/xml/ctgpclassic.xml xml
+2.7b2 http://saiveeon.github.io/ctgprc/2.7b2/riivolution/ctgpclassic.xml /riivolution/ctgpclassic.xml riivolution
